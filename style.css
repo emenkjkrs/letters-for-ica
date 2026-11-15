@@ -784,3 +784,82 @@ footer p {
   font-style: italic;
   opacity: 0.75;
 }
+
+
+/* Closure section */
+#closure-section {
+  padding: 80px 24px;
+}
+
+#closure-section .letter-content {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+#closure-section h2 {
+  margin-bottom: 24px;
+}
+
+#closure-section p {
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.section-label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  opacity: 0.6;
+  margin-bottom: 18px;
+}
+
+.closure-evidence,
+.closure-audio {
+  margin-top: 48px;
+  padding: 24px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.025);
+}
+
+.closure-evidence h3,
+.closure-audio h3 {
+  margin-bottom: 10px;
+}
+
+.evidence-caption,
+.closure-audio p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.closure-evidence .letter-image {
+  margin-top: 22px;
+}
+
+.closure-evidence .letter-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.closure-evidence figcaption {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.65;
+  margin-top: 12px;
+}
+
+.closure-audio audio {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.closure-ending {
+  margin-top: 42px;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.85;
+}
