@@ -863,3 +863,270 @@ footer p {
   text-align: center;
   opacity: 0.85;
 }
+
+
+.new-chapter-notice {
+  max-width: 680px;
+  margin: 50px auto;
+  padding: 28px;
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,.035);
+  animation: chapterFade .9s ease both;
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  opacity: .75;
+}
+
+.new-badge {
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: rgba(190,150,220,.15);
+  color: #d9b9ee;
+}
+
+.new-chapter-notice h2 {
+  margin: 24px 0 12px;
+}
+
+.new-chapter-notice > p,
+.chapter-preview p {
+  line-height: 1.8;
+  opacity: .7;
+}
+
+.chapter-preview {
+  margin: 24px 0;
+  padding: 22px;
+  border-radius: 12px;
+  background: rgba(180,140,200,.08);
+}
+
+.chapter-preview > span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  opacity: .65;
+}
+
+.chapter-preview button {
+  margin-top: 15px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 30px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.new-chapter-notice small {
+  display: block;
+  text-align: center;
+  opacity: .55;
+}
+
+@keyframes chapterFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.notification-indicator {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.bell-icon {
+  display: inline-block;
+  font-size: 21px;
+  color: #e5b9fa;
+  animation: bellBlink 1.5s ease-in-out infinite;
+  transform-origin: top center;
+}
+
+.new-badge {
+  animation: badgeGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes bellBlink {
+  0%, 100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+    text-shadow: 0 0 4px #dba6ff;
+  }
+
+  25% {
+    transform: rotate(-12deg);
+  }
+
+  50% {
+    opacity: .45;
+    transform: rotate(12deg) scale(1.08);
+    text-shadow: 0 0 14px #dba6ff;
+  }
+
+  75% {
+    transform: rotate(-7deg);
+  }
+}
+
+@keyframes badgeGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(190,130,220,0);
+  }
+
+  50% {
+    box-shadow: 0 0 13px rgba(190,130,220,.65);
+  }
+}
+
+.notification-indicator.is-read .bell-icon,
+.notification-indicator.is-read .new-badge {
+  animation: none;
+  opacity: .5;
+  box-shadow: none;
+}
+
+
+/* Header New Chapter Notification */
+.header-notification {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(210, 160, 235, 0.25);
+  border-radius: 12px;
+  background: rgba(180, 130, 210, 0.08);
+  cursor: pointer;
+  animation: notificationGlow 2s ease-in-out infinite;
+  transition: background .3s ease;
+}
+
+.header-notification:hover {
+  background: rgba(180, 130, 210, 0.16);
+}
+
+.notification-dot {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #dba7f5;
+  box-shadow: 0 0 10px #dba7f5;
+  animation: notificationBlink 1.2s infinite;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.notification-title {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #e7c5f5;
+  font-weight: 600;
+}
+
+.notification-subtitle {
+  font-size: 10px;
+  color: rgba(255,255,255,.65);
+}
+
+.notification-badge {
+  margin-left: auto;
+  padding: 4px 7px;
+  border-radius: 20px;
+  background: rgba(190,130,220,.2);
+  color: #edcafa;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+@keyframes notificationBlink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .25;
+    transform: scale(.75);
+  }
+}
+
+@keyframes notificationGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(190,130,220,0);
+  }
+  50% {
+    box-shadow: 0 0 13px rgba(190,130,220,.18);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-notification,
+  .notification-dot {
+    animation: none;
+  }
+}
+
+
+.promise-video {
+  margin-top: 55px;
+  padding: 25px;
+  border: 1px solid rgba(220,180,240,.18);
+  border-radius: 16px;
+  background: rgba(180,130,210,.035);
+}
+
+.promise-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.promise-heading span {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #d9b9e8;
+}
+
+.promise-heading h3 {
+  margin: 15px 0 10px;
+}
+
+.promise-heading p {
+  font-size: 13px;
+  opacity: .7;
+  line-height: 1.8;
+}
+
+.promise-caption {
+  text-align: center;
+  margin-top: 22px;
+}
+
+.promise-caption p {
+  font-style: italic;
+  line-height: 1.8;
+  color: #e5d3ed;
+}
+
+.promise-caption span {
+  font-size: 11px;
+  opacity: .6;
+}

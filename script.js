@@ -119,3 +119,47 @@ readAgainButton.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
+// New Chapter Notification
+const readNewChapter = document.getElementById("readNewChapter");
+const newBadge = document.getElementById("newBadge");
+const indicator = document.querySelector(".notification-indicator");
+
+if (readNewChapter) {
+  readNewChapter.addEventListener("click", () => {
+    const chapter = document.getElementById("closure-section");
+
+    if (chapter) {
+      chapter.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      if (newBadge) {
+        newBadge.textContent = "READ";
+      }
+
+      if (indicator) {
+        indicator.classList.add("is-read");
+      }
+    }
+  });
+}
+
+
+// Header notification: scroll to new chapter
+const headerNotification = document.getElementById("headerNotification");
+
+if (headerNotification) {
+  headerNotification.addEventListener("click", () => {
+    const chapter = document.getElementById("closure-section");
+
+    if (chapter) {
+      chapter.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  });
+}
