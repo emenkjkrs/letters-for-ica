@@ -1130,3 +1130,96 @@ footer p {
   font-size: 11px;
   opacity: .6;
 }
+
+/* =========================
+   54 MINUTES OF US
+========================= */
+
+.memory-chapter {
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.memory-chapter-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.chapter-label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #b99acb;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.memory-chapter h2 {
+    font-size: clamp(28px, 5vw, 45px);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.memory-intro {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    font-size: 14px;
+    line-height: 2;
+    color: rgba(255,255,255,0.65);
+    font-style: italic;
+}
+
+.memory-video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid rgba(190, 150, 215, 0.25);
+    background: #0c0b10;
+    box-shadow:
+        0 0 30px rgba(150, 100, 180, 0.08),
+        0 15px 50px rgba(0, 0, 0, 0.35);
+}
+
+.memory-video-container iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.memory-caption {
+    margin-top: 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgba(220, 190, 235, 0.65);
+    font-style: italic;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .memory-chapter {
+        padding: 70px 18px;
+    }
+
+    .memory-intro {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+
+    .memory-video-container {
+        border-radius: 10px;
+    }
+
+    .memory-caption {
+        font-size: 11px;
+        line-height: 1.8;
+    }
+
+}
