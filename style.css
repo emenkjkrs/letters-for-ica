@@ -1174,9 +1174,9 @@ footer p {
 
 .memory-video-container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 450px;
+    aspect-ratio: 9 / 16;
     margin: 0 auto;
-    aspect-ratio: 16 / 9;
     position: relative;
     overflow: hidden;
     border-radius: 18px;
@@ -1193,7 +1193,6 @@ footer p {
     width: 100%;
     height: 100%;
     border: none;
-    display: block;
 }
 
 .memory-caption {
@@ -1202,30 +1201,4 @@ footer p {
     letter-spacing: 1px;
     color: rgba(220, 190, 235, 0.65);
     font-style: italic;
-}
-
-/* Mobile */
-
-@media (max-width: 600px) {
-
-    .memory-chapter {
-        padding: 70px 18px;
-    }
-
-    .memory-intro {
-        font-size: 13px;
-        margin-bottom: 25px;
-    }
-
-    .memory-video-container {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-        border-radius: 10px;
-    }
-
-    .memory-caption {
-        font-size: 11px;
-        line-height: 1.8;
-    }
-
 }
