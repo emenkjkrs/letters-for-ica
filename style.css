@@ -1223,7 +1223,7 @@ footer p {
     color: rgba(235, 230, 240, 0.85);
     font-size: 15px;
     line-height: 2;
-    text-align: left;
+    text-align: justify;
     margin-bottom: 25px;
 }
 
@@ -1243,6 +1243,7 @@ footer p {
         font-size: 14px;
         line-height: 1.9;
         margin-bottom: 20px;
+        text-align: justify;
     }
 
    .chapter-note-content strong {
