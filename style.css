@@ -1203,37 +1203,28 @@ footer p {
     font-style: italic;
 }
 
-.chapter-note-box {
+.chapter-note-container {
     width: 100%;
     max-width: 850px;
     margin: 35px auto 0;
-    padding: 35px 30px;
+    padding: 35px;
 
-    background: rgba(20, 16, 26, 0.75);
-    border: 1px solid rgba(190, 150, 215, 0.2);
     border-radius: 18px;
+    border: 1px solid rgba(190, 150, 215, 0.25);
+
+    background: #0c0b10;
 
     box-shadow:
-        0 0 30px rgba(150, 100, 180, 0.08),
-        inset 0 0 30px rgba(150, 100, 180, 0.03);
-
-    text-align: left;
-}
-
-.chapter-note-label {
-    font-size: 11px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: rgba(190, 150, 215, 0.75);
-    margin-bottom: 25px;
-    text-align: center;
+        0 0 40px rgba(150, 100, 180, 0.12),
+        0 20px 60px rgba(0, 0, 0, 0.45);
 }
 
 .chapter-note-content p {
+    color: rgba(235, 230, 240, 0.85);
     font-size: 15px;
     line-height: 2;
-    color: rgba(235, 230, 240, 0.85);
-    margin-bottom: 22px;
+    text-align: left;
+    margin-bottom: 25px;
 }
 
 .chapter-note-content p:last-child {
@@ -1241,16 +1232,11 @@ footer p {
 }
 
 @media (max-width: 600px) {
-    .chapter-note-box {
-        padding: 25px 20px;
+    .chapter-note-container {
+        width: 100%;
+        padding: 24px 20px;
         margin-top: 25px;
-        border-radius: 14px;
-    }
-
-    .chapter-note-label {
-        font-size: 10px;
-        letter-spacing: 2px;
-        margin-bottom: 20px;
+        border-radius: 12px;
     }
 
     .chapter-note-content p {
