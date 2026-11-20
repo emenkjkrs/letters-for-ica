@@ -1244,4 +1244,9 @@ footer p {
         line-height: 1.9;
         margin-bottom: 20px;
     }
+
+   .chapter-note-content strong {
+    color: #f0e6f6;
+    font-weight: 600;
+   }
 }
